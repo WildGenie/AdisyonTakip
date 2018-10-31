@@ -1,45 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace AdisyonTakip
+﻿namespace AdisyonTakip
 {
+    using System;
+    using System.Windows.Forms;
+
     public partial class Form1 : Form
     {
+        Form2 ikinciForm;
+
+        Veriler veri;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        Veriler veri;
-
-        Form2 ikinciForm;
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            var veri = new Veriler();
-            gridControl1.DataSource = veri;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        void button1_Click(object sender, EventArgs e)
         {
             if (ikinciForm == null)
             {
-                ikinciForm = new Form2();
-                ikinciForm.ilkForm = this;
+                ikinciForm = new Form2 { ilkForm = this };
                 ikinciForm.Show();
                 Hide();
             }
             else if (ikinciForm.IsDisposed)
             {
-                ikinciForm = new Form2();
-                ikinciForm.ilkForm = this;
+                ikinciForm = new Form2 { ilkForm = this };
                 ikinciForm.Show();
             }
             else
@@ -53,6 +38,14 @@ namespace AdisyonTakip
                     ikinciForm.Show();
                 }
             }
+        }
+
+        void Form1_Load(object sender, EventArgs e)
+        {
+            // var veri = new Veriler();
+            // gridControl1.DataSource = veri;
+            // gridControl1.DataMember = "Urunler";
+            verilerBindingSource.DataSource = new Veriler();
         }
     }
 }

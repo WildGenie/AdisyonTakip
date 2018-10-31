@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AdisyonTakip
 {
-    public class Adisyon
+    public class Kalem
     {
 
         public Urun Urun

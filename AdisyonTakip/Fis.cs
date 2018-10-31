@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AdisyonTakip
 {
-    public class Fis
+    public class Adisyon
     {
         public string MasaAdi
         {
@@ -13,7 +13,7 @@ namespace AdisyonTakip
             set;
         }
 
-        public List<Adisyon> Adisyonlar
+        public List<Kalem> Adisyonlar
         {
             get;
             set;

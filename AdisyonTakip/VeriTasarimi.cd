@@ -7,15 +7,15 @@
       <FileName>Menu.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AdisyonTakip.Adisyon">
-    <Position X="3.25" Y="0.75" Width="1.5" />
+  <Class Name="AdisyonTakip.Kalem">
+    <Position X="5.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAACAAAAAABAAAEAAAAAAIAAAAA=</HashCode>
       <FileName>Adisyon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AdisyonTakip.Fis">
-    <Position X="5" Y="0.75" Width="1.5" />
+  <Class Name="AdisyonTakip.Adisyon">
+    <Position X="3.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIEAAAAAAAAAAAAAAEAAAAEAAAAAAAACAAAAAABAAAA=</HashCode>
       <FileName>Fis.cs</FileName>

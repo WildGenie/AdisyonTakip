@@ -10,25 +10,28 @@ using System.Windows.Forms;
 
 namespace AdisyonTakip
 {
-    public partial class Form2 : Form
+    public partial class LoginForm : Form
     {
-        public Form1 ilkForm;
-        public Form2()
+        public LoginForm()
         {
+            this.DialogResult = DialogResult.Cancel;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (ilkForm != null)
+            if (textBox1.Text == "1234")
             {
-                ilkForm.Visible = !ilkForm.Visible;
+                this.DialogResult = DialogResult.OK;
+
+                Close();
             }
-            else
-            {
-                ilkForm = new Form1();
-                ilkForm.Show();
-            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.No;
+            Close();
         }
     }
 }

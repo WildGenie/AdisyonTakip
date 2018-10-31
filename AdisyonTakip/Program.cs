@@ -16,7 +16,11 @@ namespace AdisyonTakip
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var form1 = new LoginForm();
+            if (form1.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form2());
+            }
         }
     }
 }

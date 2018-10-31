@@ -25,13 +25,13 @@ namespace AdisyonTakip
             set;
         }
 
-        public decimal ToplamFiyat
+        public double ToplamFiyat
         {
             get;
             set;
         }
 
-        public decimal OdemeMiktari
+        public double OdemeMiktari
         {
             get;
             set;

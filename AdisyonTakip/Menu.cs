@@ -25,7 +25,7 @@ namespace AdisyonTakip
             set;
         }
 
-        public decimal Fiyat
+        public double Fiyat
         {
             get;
             set;

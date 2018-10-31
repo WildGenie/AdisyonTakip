@@ -14,7 +14,7 @@ namespace AdisyonTakip
             set;
         }
 
-        public decimal Miktar
+        public double Miktar
         {
             get;
             set;
